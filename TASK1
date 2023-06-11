@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<center>
+<table>
+  <thead>
+    <tr>
+      <th>SL NO</th>
+      <th>NAME</th>
+      <th>AGE</th>
+      <th>TEAM</th>
+    </tr>
+  </thead>
+<tbody>
+
+<?php
+  $people = array(
+    array("sl" => "1", "name" => "Sadhin Halder", "age" => 26, "team" => "A"),
+    array("sl" => "2", "name" => "Yeamin Hossain", "age" => 23, "team" => "B"),
+    array("sl" => "3", "name" => "Abbas Uddin", "age" => 40, "team" => "C"),
+    array("sl" => "4", "name" => "Sumon Sikdar", "age" => 40, "team" => "D"),
+    array("sl" => "5", "name" => "Sakib Ahamed", "age" => 40, "team" => "E")
+    );
+
+  foreach ($people as $person) {
+    echo "<tr>";
+    echo "<td>" . $person["sl"] . "</td>";
+    echo "<td>" . $person["name"] . "</td>";
+    echo "<td>" . $person["age"] . "</td>";
+    echo "<td>" . $person["team"] . "</td>";
+    echo "</tr>";
+  }
+?>
+
+</tbody>
+</table>
+</center>
+</body>
+</html>
+
+
