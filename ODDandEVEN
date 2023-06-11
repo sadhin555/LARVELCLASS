@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Even/Odd Number Program</title>
+  </head>
+<body>
+  <center>
+    <h2>Input Your Number</h2></br>
+    <form method="post">
+      <input type="text" name="number" placeholder="Enter a number">
+      <input type="submit" value="Submit">
+    </form>
+
+<?php
+if ($_POST) {
+  $number = $_POST['number'];
+  if ($number % 2 == 0) {
+    echo "$number is an even number";
+  } else {
+    echo "$number is an odd number";
+  }
+}
+?>
+</body>
+</center>
+</html>
