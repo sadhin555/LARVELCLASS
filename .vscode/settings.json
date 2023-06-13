@@ -37,5 +37,5 @@
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "explicit",
-    "workbench.colorTheme": "Laravel",
+    "workbench.colorTheme": "Default Dark Modern",
 }
