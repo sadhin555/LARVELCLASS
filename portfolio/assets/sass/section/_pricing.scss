@@ -1,0 +1,256 @@
+/*==========================================================================
+Pricing CSS
+==========================================================================*/
+.pricing__area {
+    &-item {
+        padding: 0 70px 50px 50px;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 0 60px var(--color-10);
+        border-radius: 6px;
+        margin-top: 75px;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../../assets/img/shape/price.png');
+            background-size: cover;
+            z-index: -1;
+        }
+        &-price {
+            display: inline-block;
+            width: 150px;
+            height: 175px;
+            padding: 49px 0;
+            text-align: center;
+            background: var(--primary-color-3);
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);  
+            border: 0;
+            margin-bottom: 20px;
+            margin-top: -75px;
+            position: relative;
+            z-index: 1;
+            h4 {
+                color: var(--text-white);
+                span {
+                    font-weight: 500;
+                    font-size: 48px;
+                    line-height: 48px;                    
+                }
+            }
+            .text-two {
+                color: var(--text-white);
+            }
+        }
+        &-title {
+            .text-two {
+                font-weight: 500;
+                color: var(--body-color);
+            }
+        }
+        &-list {
+            margin-top: 20px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color-1);
+            ul {
+                padding: 0;
+                margin: 0;
+                li {      
+                    list-style: none;    
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 26px;
+                    margin-bottom: 18px;                              
+                    i {
+                        width: 20px;
+                        height: 20px;
+                        line-height: 17px;
+                        text-align: center;
+                        border: 1px solid var(--primary-color-3);
+                        border-radius: 50%;
+                        color: var(--primary-color-3);
+                        font-size: 12px;
+                        font-weight: 400;
+                        margin-right: 10px;
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .btn-eight {
+            width: 100%;
+            border-color: var(--border-color-1);
+            justify-content: center;
+            color: var(--text-heading-color);
+            margin-top: 30px;
+            &::before {
+                background: var(--primary-color-3);
+            }
+            &:hover {
+                color: var(--text-white);
+                border-color: var(--primary-color-3);
+            }
+        }
+        &.page {
+            .pricing__area-item {
+                &-price {
+                    background: var(--primary-color-1);
+                }
+                &-list ul li i {
+                    color: var(--primary-color-1);
+                    border-color: var(--primary-color-1);
+                }
+            }
+            &.pricing__area-item .btn-eight {
+                &::before {
+                    background: var(--primary-color-1);
+                }
+                &:hover {
+                    border-color: var(--primary-color-1);
+                } 
+            }         
+        }
+    }
+}
+/*==========================================================================
+Pricing Two CSS
+==========================================================================*/
+.pricing__two {
+    background: var(--color-6);
+    &-title {
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 40px;
+        }
+    }
+    &-item {
+        background: var(--bg-white);
+        padding: 40px;
+        &-price {
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color-1);
+            > span {
+                font-weight: 500;
+                font-size: 16px;   
+                line-height: 26px;
+                font-family: var(--heading-font);
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+            h2 {
+                span {
+                    font-weight: 500;
+                    font-size: 14px;   
+                    line-height: 24px; 
+                    margin-left: 10px;
+                    display: inline-block;                    
+                }
+            }
+        }
+        &-list {
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    color: var(--text-heading-color);
+                    margin-bottom: 20px;
+                    i {
+                        color: var(--primary-color-1);
+                        font-size: 20px;
+                        margin-right: 10px;
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &-btn {
+            margin-top: 30px;
+            .btn-three {
+                border-color: var(--border-color-1);
+                color: var(--text-heading-color);
+                &:hover {
+                    color: var(--text-white);
+                    border-color: var(--primary-color-1);
+                }
+            }
+        }
+    } 
+    &-button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+        & .nav-item {
+            button {
+                background: transparent;
+                border: 1px solid var(--border-color-1);
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 50px;
+                text-transform: capitalize;
+                font-family: var(--heading-font);
+                padding: 0 30px;
+                margin: 0 10px;
+                color: var(--text-heading-color);
+            }
+            & .active {
+                background: var(--primary-color-1);
+                border-color: var(--primary-color-1);
+                color: var(--text-white);
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .pricing__two {
+        &-item {
+            padding: 30px 25px;
+            &.center {              
+                .pricing__two-item {
+                    &-btn {
+                        .theme-btn {
+                            padding: 12px 34px;
+                        }
+                    }
+                }
+            }
+            &-btn {
+                .btn-three {
+                    padding: 11px 34px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .pricing__two {
+        &-title {
+            text-align: center;
+        }
+        &-button {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 991px) {    
+    .pricing__area-item {
+        padding: 0 50px 50px 40px;
+    }
+}
+@media (max-width: 359px) {    
+    .pricing__area-item {
+        padding: 0 30px 50px 30px;
+    }
+}

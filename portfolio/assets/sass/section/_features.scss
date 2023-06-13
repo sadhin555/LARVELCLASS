@@ -1,0 +1,109 @@
+/*==========================================================================
+Features CSS
+==========================================================================*/
+.features {
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+    &-area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        box-shadow: var(--box-shadow-1);
+        &-item {
+            position: relative;
+            overflow: hidden;
+            padding: 40px;
+            transition: 0.4s;
+            background: var(--bg-white);
+            span {
+                position: absolute;
+                right: -50px;
+                top: -50px;
+                i {
+                    font-size: 25px;
+                    color: var(--primary-color-3);
+                    position: relative;
+                    width: 137px;
+                    height: 137px;
+                    line-height: 137px;
+                    text-align: center;
+                    transition: 0.4s;
+                    &::before {
+                        position: relative;
+                        top: 24px;
+                        right: 20px;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        right: 0;
+                        top: 0;
+                        width: 137px;
+                        height: 137px;
+                        opacity: 0.1;
+                        background: var(--primary-color-3);
+                        border-radius: 50%;
+                        transition: 0.4s;
+                    }
+                }
+            }
+            h4 {
+                margin-bottom: 10px;
+                transition: 0.4s;
+            }
+            p {
+                max-width: 270px;
+                transition: 0.4s;
+            }
+            &-hover {
+                background: var(--primary-color-3);
+                h4 {
+                    color: var(--text-white);
+                }
+                p {
+                    color: var(--text-white);
+                }
+                &.features-area-item span i {
+                    color: var(--text-white);
+                    &::after {
+                        background: var(--bg-white);
+                    }
+                }
+            }
+        }
+    }
+    .ltb-radius {
+        border-radius: 6px 0 0 6px;
+    }
+    .rtb-radius {
+        border-radius: 0 6px 6px 0;
+    }
+}
+@media (max-width: 1299px) {    
+    .features-area-item {
+        padding: 40px 30px;
+    }
+}
+@media (max-width: 991px) {    
+    .features {
+        &-area {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media (max-width: 766px) {    
+    .features {
+        &-area {
+            grid-template-columns: repeat(1, 1fr);
+            &-item {
+                border-radius: 4px;
+            }
+        }
+        .ltb-radius {
+            border-radius: 4px;
+        }
+        .rtb-radius {
+            border-radius: 4px;
+        }
+    }
+}

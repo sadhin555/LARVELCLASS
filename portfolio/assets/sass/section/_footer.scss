@@ -1,0 +1,525 @@
+/*==========================================================================
+Footer Top CSS
+==========================================================================*/
+.footer__top {
+    background: var(--primary-color-1);
+    position: relative;
+    z-index: 1;
+    padding: 60px 0;
+    overflow: hidden;
+    &-shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        z-index: -1;
+    }
+    &-title {
+        h2 {
+            color: var(--text-white);
+        }
+    }
+    .btn-two {
+        color: var(--text-white);
+        background: transparent;
+        &:hover {
+            color: var(--primary-color-1);
+            border-color: var(--text-white);
+        }
+        &::before {
+            background: var(--btn-white);
+        }
+    }
+}
+/*==========================================================================
+Footer One CSS
+==========================================================================*/
+.footer__one {
+    position: relative;
+    z-index: 1;
+    background: var(--bg-heading-color);
+    padding-top: 100px;
+    &-shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    &-widget {
+      h4 {
+            color: var(--text-white);
+            margin-bottom: 25px;
+        }
+        &-about {
+            a img {
+                max-width: 165px;
+            }
+            p {
+                color: var(--color-4);
+                max-width: 260px;
+                margin-top: 15px;
+            }
+            &-social {
+                margin-top: 30px;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        margin-right: 10px;
+                        &:last-child {
+                            margin: 0;
+                        }
+                        a {
+                            i {
+                                display: inline-block;
+                                width: 50px;
+                                height: 50px;
+                                line-height: 50px;
+                                text-align: center;
+                                background: var(--color-11);
+                                font-size: 15px;
+                                border-radius: 50%;
+                                color: var(--text-white);
+                                transition: 0.4s;
+                                &:hover {
+                                    background: var(--primary-color-1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-solution {
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    padding: 0;
+                    list-style: none;
+                    margin-bottom: 15px;
+                    &:last-child {
+                        margin: 0;
+                    }
+                    a {
+                        color: var(--color-4);
+                        transition: 0.4s;
+                        position: relative;
+                    i {
+                        color: var(--primary-color-1);
+                        font-size: 14px;
+                        line-height: 24px;
+                        position: absolute;
+                        opacity: 0;
+                        transition: 0.4s;
+                        left: 0px;
+                        top: 0;
+                    }
+                    &:hover {
+                        color: var(--primary-color-1);
+                        padding-left: 20px;
+                        i {
+                            opacity: 1;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+        &-location {
+            h6 {
+                color: var(--text-white);
+                margin: 18px 0;
+            }
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                &-icon i {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                    border: 1px solid var(--color-11);
+                    border-radius: 50%;
+                    color: var(--primary-color-1);
+                }
+                &-info a {
+                    color: var(--color-4);
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    max-width: 188px;
+                    display: inline-block;
+                    transition: 0.4s;
+                    &:hover {
+                    color: var(--primary-color-1);
+                    }
+                }
+            }
+        }
+        &-subscribe {
+            p {
+                color: var(--color-4);
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 26px;
+                max-width: 265px;
+                span {
+                    color: var(--primary-color-1);
+                }
+            }
+            form {
+                position: relative;
+                margin-top: 30px;
+                input {
+                    background: transparent;
+                    color: var(--color-9);
+                    border-color: var(--color-11);
+                    height: 70px;
+                    &:focus {
+                        color: var(--color-9);
+                    }
+                }
+                button {
+                    padding: 0;
+                    position: absolute;
+                    right: 7px;
+                    top: 7px;
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 4px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .border-one {
+        padding-left: 35px;
+        position: relative;
+        margin-left: -5px;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 220px;
+            background: var(--color-11);
+            left: 0;
+            top: 0;
+        }
+    }
+    .border-one.tow {
+        margin-left: -13px;
+    }
+}
+/*==========================================================================
+Footer Two CSS
+==========================================================================*/
+.footer__two {
+    background: var(--bg-heading-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-widget {
+        h4 {
+            color: var(--text-white);
+            margin-bottom: 25px;
+        }
+        &.footer-border {
+            position: relative;
+            padding-left: 60px;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 250px;
+                background: var(--color-11);
+                left: -10px;
+                top: 0;
+            }
+        }
+        &-about {
+            a img {
+                max-width: 165px;
+            }
+            p {
+                color: var(--color-4);
+                max-width: 355px;
+                margin-top: 25px;
+            }
+            &-social {
+                margin-top: 30px;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {                
+                        list-style: none;
+                        display: inline-block;
+                        margin-right: 10px;
+                        &:last-child {
+                            margin: 0;
+                        }
+                        a i {
+                            display: inline-block;
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            text-align: center;
+                            background: var(--color-11);
+                            font-size: 15px;
+                            border-radius: 50%;
+                            color: var(--text-white);
+                            transition: 0.4s;
+                            &:hover {
+                                background: var(--primary-color-2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-location {
+            h6 {
+                color: var(--text-white);
+                margin: 18px 0;
+            }
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                &-icon i {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 20px;
+                    border: 1px solid var(--color-11);
+                    border-radius: 50%;
+                    color: var(--primary-color-2);
+                }
+                &-info a {
+                    color: var(--color-4);
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    max-width: 220px;
+                    display: inline-block;
+                    transition: 0.4s;
+                    &:hover {
+                        color: var(--primary-color-2);  
+                    }
+                }
+            }
+        }        
+    }
+}
+/*==========================================================================
+Footer Three CSS
+==========================================================================*/
+.footer__three {
+    position: relative;
+    z-index: 1;
+    background: var(--color-6);
+    padding-top: 100px;
+    &-shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    &-widget {
+        h4 {
+            margin-bottom: 20px;
+        }
+        &-about {
+            a img {
+                max-width: 165px;
+            }
+            p {
+                max-width: 350px;
+                margin-top: 30px;
+            }
+        }
+        &-solution {
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    padding: 0;
+                    list-style: none;
+                    margin-bottom: 15px;
+                    &:last-child {
+                        margin: 0;
+                    }
+                    a {
+                        transition: 0.4s;
+                        position: relative;
+                        font-weight: 500;
+                    i {
+                        color: var(--primary-color-3);
+                        font-size: 14px;
+                        line-height: 24px;
+                        position: absolute;
+                        opacity: 0;
+                        transition: 0.4s;
+                        left: 0px;
+                        top: 0;
+                    }
+                    &:hover {
+                        color: var(--primary-color-3);
+                        padding-left: 20px;
+                        i {
+                            opacity: 1;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+        &-location {
+            h6 {
+                margin: 18px 0;
+            }
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                &-icon i {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 20px;
+                    border: 1px solid var(--color-15);
+                    border-radius: 50%;
+                    color: var(--primary-color-3);
+                }
+                &-info a {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    max-width: 188px;
+                    display: inline-block;
+                    transition: 0.4s;
+                    &:hover {
+                        color: var(--primary-color-3);
+                    }
+                }
+            }
+        }
+        &-hour {
+            p {
+                font-weight: 500;
+                font-family: var(--heading-font);
+                margin-bottom: 7px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            &-social {
+                margin-top: 25px;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        margin-right: 10px;
+                        &:last-child {
+                            margin: 0;
+                        }
+                        a i {
+                            display: inline-block;
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            text-align: center;
+                            background: var(--bg-white);
+                            font-size: 15px;
+                            border-radius: 50%;
+                            color: var(--heading-color);
+                            transition: 0.4s;
+                            &:hover {
+                                background: var(--primary-color-3);
+                                color: var(--text-white);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+All Footer CSS
+==========================================================================*/
+.all-footer {
+    .footer__two {
+        &-widget {
+            &-location-item {
+                &-icon i {
+                    color: var(--primary-color-1);
+                }
+                &-info a:hover {
+                    color: var(--primary-color-1);
+                }
+            }
+            &-about-social ul li a i:hover {
+                background: var(--primary-color-1);
+            }
+        }
+    }
+    .post__item-title {
+        h6 a:hover {
+            color: var(--primary-color-1);
+        }
+        span i {
+            color: var(--primary-color-1);
+        } 
+    }
+    .copyright__two p a {
+       color: var(--primary-color-1);
+    }        
+}
+@media (max-width: 1399px) {
+    .footer__one {
+        .border-one {
+            padding-left: 0;
+            margin-left: 0;
+            &::before {
+                display: none;
+            }
+        }
+        .border-one.tow {
+            margin-left: 0;
+        }
+    }
+    .footer__two-widget.footer-border {
+        padding-left: 40px;
+    }
+}
+@media (max-width: 1199px) {	
+    .footer__two-widget.footer-border {
+        padding-left: 0;
+        &::before {
+            display: none;
+        }
+    }
+}
+@media (max-width: 575px) {
+	.footer__one {
+		padding-top: 85px;
+	}
+}

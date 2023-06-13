@@ -1,0 +1,432 @@
+/*==========================================================================
+About One CSS
+==========================================================================*/
+.about__one {
+    position: relative;
+    &-shape {
+        &-1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        &-2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+    &-left {
+        position: relative;
+        &-image {
+            display: flex;
+            align-items: start;
+            gap: 20px;
+            img {
+                width: 100%;
+            }
+            .two {
+                min-height: 570px;
+                object-fit: cover;
+            }
+        }
+        &-experience {
+            position: absolute;
+            left: 70px;
+            bottom: 0;
+            background: var(--primary-color-1);
+            width: 244px;
+            height: 225px;
+            padding: 50px;
+            h1 {
+                color: var(--text-white);
+                font-size: 60px;
+                line-height: 70px;
+                margin-bottom: 10px;
+            }            
+            h6 {
+                color: var(--text-white);
+                font-size: 18px;
+                line-height: 28px;                
+            }            
+        }
+    }
+    &-right {
+        margin-left: 95px;
+        &-title {
+            margin-bottom: 45px;
+            h2 {
+                margin-bottom: 30px;
+                max-width: 430px;
+            }
+        }
+        &-btn {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            &-author {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                &-avatar {
+                    img {
+                        border-radius: 50%;
+                        max-width: 60px;
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                    }
+                }
+                &-name {
+                    h6 {
+                        color: var(--color-2);
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        &-bottom {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            &-list {
+                span {
+                    display: block;
+                    font-weight: 600;
+                    font-family: var(--heading-font);
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin: 0;
+                    }
+                    i {
+                        width: 22px;
+                        height: 22px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: var(--primary-color-1);
+                        border: 1px solid var(--primary-color-1);
+                        font-size: 12px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &-experience {
+                width: 140px;
+                height: 130px;                
+                background: var(--bg-heading-color);
+                text-align: center;
+                display: block;
+                padding: 25px 0;
+                h3 {
+                    font-size: 40px;
+                    color: var(--text-white);
+                    margin-bottom: 10px;
+                }
+                h6 {
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: var(--text-white);                    
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+About Two CSS
+==========================================================================*/
+.about__two {
+    position: relative;
+    z-index: 1;
+    &-shape {
+        position: absolute;
+        bottom: 0;
+        left: 0;  
+        z-index: -1;
+    }
+    &-right {
+        &-title {
+            margin-bottom: 45px;
+            h2 {
+                margin-bottom: 30px;
+            }
+            p {
+                max-width: 493px;
+            }
+        }
+        &-btn {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 55px;
+            &-author {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                &-avatar {
+                    img {
+                        border-radius: 50%;
+                        max-width: 60px;
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                    }
+                }
+                &-name {
+                    h6 {
+                        color: var(--color-2);
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .btn-six {
+                &::before {
+                    background: var(--primary-color-2);
+                }
+                &:hover {
+                    color: var(--text-white);
+                    border-color: var(--primary-color-2);
+                }
+            }
+        }
+        &-experience {
+            display: flex;
+            align-items: center;
+            &-counter {
+                padding-right: 40px;
+                margin-right: 40px;
+                border-right: 1px solid var(--border-color-2);
+            }
+            h6 {
+                max-width: 187px;
+            }
+        }
+    }
+}
+/*==========================================================================
+About Three CSS
+==========================================================================*/
+.about__three {
+    overflow: hidden;
+    &-title {
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            max-width: 520px;
+            margin-bottom: 38px;
+        }
+        &-faq {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 50px;
+            &-icon {
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                border-radius: 50%;
+                border: 1px solid var(--border-color-1);
+            }
+            &-text {
+                span {
+                    font-weight: 500;
+                }
+                h6 {
+                    color: var(--primary-color-3);
+                    font-size: 18px;
+                    line-height: 28px;
+                    a {
+                        margin-left: 15px;
+                    }                    
+                }
+            }
+        }
+    }
+    &-right {
+        position: relative;
+        &-image {
+            &-one {
+                text-align: center;
+            }
+            &-two {
+                margin-top: -70px;
+                margin-left: 40px;
+            }
+        }
+        &-content {
+            position: absolute;
+            right: 0;
+            bottom: 35px;
+            background: var(--bg-heading-color);
+            display: inline-block;
+            padding: 40px;
+            padding-bottom: 60px;
+            clip-path: polygon(0 0, 100% 0%, 100% 88%, 0% 100%);
+            &-counter {
+                background: var(--primary-color-3);
+                text-align: center;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 30px;
+                position: relative;
+                z-index: 1;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 150px;
+                    height: 150px;
+                    border: 1px dashed var(--primary-color-3);
+                    border-radius: 50%;
+                    display: block;
+                    top: 18px;
+                    left: 10px;
+                    z-index: -1;
+                    animation: rotation 10s infinite linear;
+                }
+                h1 {
+                    font-size: 50px;
+                    line-height: 70px;
+                    color: var(--text-white);
+                    padding: 40px 0;
+                }
+            }
+            p {
+                width: 162px;
+                color: var(--text-white);
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .about__one {
+        &-left {
+            &-image {
+                .one {
+                    max-width: 43%;
+                }
+                .two {
+                    min-height: 530px;
+                    overflow: hidden;
+                }
+            }
+        }
+        &-right {
+            margin-left: 30px;
+            &-title {   
+                margin-bottom: 38px;             
+                h2 {
+                    margin-bottom: 23px;
+                }
+            }
+            &-bottom {
+                margin-top: 43px;
+            }
+        }
+    }    
+}
+@media (max-width: 1199px) {
+    .about__one {
+        &-left {
+            &-image {
+                .one {
+                    max-width: 43%;
+                }
+                .two {
+                    min-height: 530px;
+                }
+            }
+        }
+        &-right {
+            margin-left: 0;
+            &-btn {
+                gap: 25px;
+                & .btn-one {
+                    padding: 17px 35px;
+                }
+                &-author {
+                    gap: 20px;
+                }
+            }
+            &-bottom {
+                gap: 40px;
+            }          
+        }
+    }    
+}
+@media (max-width: 475px) {
+    .about__one {
+        &-left {
+            &-image {
+                gap: 20px;
+                .two {
+                    min-height: 350px;
+                    object-fit: cover;
+                }
+            }
+            &-experience {
+                left: 10px;
+                h1 {
+                    font-size: 50px;
+                    line-height: 60px;                
+                }            
+            }
+        }
+        &-right {
+            &-btn {
+                display: block;
+                &-author {
+                    margin-top: 30px;
+                }
+            }
+            &-bottom {
+                display: block;
+                &-experience {
+                    margin-top: 30px;
+                }
+            }        
+        }
+    }
+    .about__two {
+        &-right {
+            &-title {
+                margin-bottom: 22px;
+            }
+            &-btn {
+                display: block;
+                margin-top: 20px;
+                &-author {
+                    margin-top: 30px;
+                }
+            }
+            &-experience {
+                display: block;
+                align-items: center;
+                &-counter {
+                    padding: 0;
+                    margin: 0;
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 390px) {
+    .about__three-right-content {
+        bottom: 0;
+    }    
+}
+@media (max-width: 359px) {
+    .about__three-right-image-two {
+        margin: 0;
+    }     
+}

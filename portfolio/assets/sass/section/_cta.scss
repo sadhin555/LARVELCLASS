@@ -1,0 +1,558 @@
+/*==========================================================================
+Cta CSS
+==========================================================================*/
+.cta__area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background: var(--color-6);
+        z-index: -1;
+    }
+    &-bg {
+        padding: 60px 70px;
+        padding-right: 0;
+        background: var(--primary-color-1);
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -3000px;
+            width: 3000px;
+            height: 100%;
+            background: var(--primary-color-1);
+            z-index: -1;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('../../assets/img/shape/cta.png');
+            background-repeat: no-repeat;
+            width: 122%;
+            height: 100%;
+            background-size: cover;
+            z-index: -1;
+        }
+    }
+    &-title {
+        h2 {
+            color: var(--text-white);
+            margin-bottom: 10px;
+        }
+        .text-two {
+            color: var(--text-white);
+        }
+    }
+    &-form form {
+        display: flex;
+        gap: 30px;
+        justify-content: end;
+        input {
+            border-radius: 6px;
+            padding-right: 0;
+        }
+    }
+}
+/*==========================================================================
+Cta Two CSS
+==========================================================================*/
+.cta__two {
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 80px 0;   
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-heading-color);
+        opacity: 0.85;
+        z-index: -2;        
+    }
+    &-shape {
+        position: absolute;
+        right: 200px;
+        top: 0;
+        z-index: -1;
+        mix-blend-mode: soft-light;     
+        height: 100%;
+    }
+    &-title {
+        h2 {
+            color: var(--text-white);
+        }
+    }
+    &-info {
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+        &-item {
+            display: inline-block;
+            background: var(--bg-white);
+            padding: 30px 45px;
+            border-radius: 6px;
+            &-icon {
+                margin-bottom: 15px;
+                i {
+                    color: var(--primary-color-1);
+                    font-size: 20px;                    
+                    background: var(--color-6);
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    border-radius: 50%;
+                    transition: 0.4s;
+                }
+            }
+            h6 {
+                text-transform: lowercase;
+                a {
+					background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 2px no-repeat;
+					transition: all 400ms ease;
+                    &:hover {
+						background-size: 100% 2px;
+                        color: var(--primary-color-1);
+                    }
+                }
+            }
+            span {
+                font-size: 14px;
+                font-weight: 600;
+                    
+            }
+            &:hover {
+                .cta__two-info-item-icon i {
+                    background: var(--primary-color-1);
+                    color: var(--text-white);
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+Get In Touch CSS
+==========================================================================*/
+.getIn__touch {
+    position: relative;
+    z-index: 1;
+    background-position: center;   
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding-bottom: 0;
+    &-shape {
+        position: absolute;
+        right: 150px;
+        top: 0;
+        z-index: -1;
+        mix-blend-mode: soft-light;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-heading-color);
+        opacity: 0.85;
+        z-index: -2;
+    }
+    &-left {
+        box-shadow: var(--box-shadow-2);
+        background: var(--bg-white);
+        padding: 71px 68px;
+        margin-right: 125px;
+        margin-bottom: -120px;
+        &-form {
+            input {
+                border-radius: 6px;
+            }
+            .btn-one {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+    &-right {
+        &-title {
+            h2 {
+                margin-bottom: 30px;
+                color: var(--text-white);
+                max-width: 495px;
+            }
+            p {
+                color: var(--text-white);
+                max-width: 475px;
+            }
+        }
+        &-bottom {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            &-text h4 {
+                color: var(--text-white);
+                max-width: 200px;
+            }
+            &-image {
+                margin-left: 40px;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        padding: 0;
+                        display: inline-block;
+                        list-style: none;
+                        margin-left: -23px;
+                        &:first-child {
+                            margin: 0;
+                        }
+                        img {
+                            max-width: 50px;
+                            width: 50px;
+                            height: 50px;
+                            object-fit: cover;
+                            border: 4px solid var(--border-white);
+                            border-radius: 50%;
+                            transition: 0.4s;
+                            &:hover {
+                                border-color: var(--primary-color-1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+Get In Touch Three CSS
+==========================================================================*/
+.getIn__touch-three {
+    position: relative;
+    z-index: 1;
+    background-position: center;   
+    background-repeat: no-repeat; 
+    background-size: cover;
+    &-shape {
+        position: absolute;
+        right: 36%;
+        top: 0;
+        height: 100%;
+        transform: translateX(-50%);
+        z-index: -1;
+        mix-blend-mode: color-dodge;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-heading-color);
+        opacity: 0.85;
+        z-index: -2;
+    }
+    &-left {
+        &-title {
+            h2 {
+                margin-bottom: 30px;
+                color: var(--text-white);
+                max-width: 545px;
+            }
+            p {
+                color: var(--color-4);
+                max-width: 530px;
+            }
+        }
+        &-video {
+            margin-top: 55px;
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            &-icon.video a {
+                color: var(--primary-color-3);
+            }
+            &-text h4 {
+                color: var(--text-white);
+                max-width: 200px;
+            }
+            &-shape {
+                margin-left: 90px;
+            }
+        }
+    }
+    &-right {
+        box-shadow: var(--box-shadow-2);
+        background: var(--bg-white);
+        padding: 50px;
+        border-radius: 6px;
+        margin-left: 75px;
+        margin-bottom: -50px;
+        h3 {
+            margin-bottom: 40px;
+        }
+        &-form {
+            input,
+            textarea {
+                background: var(--color-6);
+                border-color: var(--color-6);
+                color: var(--color-2);
+                &:focus {
+                    border-color: var(--primary-color-3);
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+Help CSS
+==========================================================================*/
+.help__area {
+    padding-top: 49px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        &-icon i {
+            color: var(--primary-color-1);
+            border: 1px solid var(--color-7);
+            font-size: 30px;
+            width: 70px;
+            height: 70px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+        &-info {
+            span {
+                color: var(--color-2);
+            }
+            h5 {
+                transition: 0.4s;
+                text-transform: lowercase;
+                &:hover {
+                    color: var(--primary-color-1);
+                }
+            }
+        }
+        &:hover {
+            .help__area-item-icon i {
+                background: var(--primary-color-1);
+                border-color: var(--primary-color-1);
+                color: var(--text-white);
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .cta__area {
+        &-bg {
+            padding: 60px 40px;
+        }        
+        &-form form {
+            gap: 25px;
+        }
+    }
+    .getIn__touch {
+        &-shape {
+            height: 100%;
+        }
+        &-left {
+            padding: 60px 50px;
+            margin-right: 80px;
+            margin-bottom: -115px;
+        }
+        &-right {
+            &-title {
+                h2 {
+                    margin-bottom: 23px;
+                }
+            }
+        }
+    }
+    .help__area {
+        padding-top: 45px;
+        padding-left: 45px;
+        gap: 30px;
+        justify-content: end;
+    }
+    .getIn__touch-three-right {
+        padding: 45px 40px;
+        margin-left: 60px;
+    }    
+}
+@media (max-width: 1199px) {
+    .cta__area {      
+        &-form {
+            margin-top: 30px;
+            form {
+                justify-content: start;
+            }
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+    .getIn__touch {
+        &-left {
+            padding: 40px 30px;
+            margin-right: 0;
+        }
+        &-right-bottom {
+            gap: 30px;
+        }
+    }
+    .help__area {
+        gap: 20px;
+        &-item {
+            gap: 20px;
+            &-icon i {
+                font-size: 20px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+            }
+        }
+    }
+    .getIn__touch-three-right {
+        padding: 40px 30px;
+        margin-left: 10px;             
+    }  
+    .getIn__touch-three-left-video-shape {
+        margin-left: 20px;
+    }   
+    .cta__two-info-item {
+        padding: 30px 40px;
+    }    
+}
+@media (max-width: 991px) {
+    .cta__area {
+        &-bg {
+            padding: 50px 30px;
+            padding-right: 0;
+        }
+        &-form form {
+            gap: 20px;
+            input {
+                padding-right: 10px;
+            }
+        }
+    }
+    .getIn__touch {
+        padding-bottom: 120px;
+        &-left {
+            margin: 0;
+        }
+        &-right-bottom {
+            gap: 30px;
+        }
+    }
+    .help__area {
+        justify-content: start;
+        padding-left: 0;
+    }
+    .getIn__touch-three-right {
+        margin-left: 0;
+    }
+    .cta__two {
+        &-title {
+            text-align: center;
+        }
+        &-info {
+            justify-content: center;
+        } 
+    }
+}
+@media (max-width: 767px) {
+    .cta__area {
+        &-form form {
+            display: initial;
+        }
+    }
+    .getIn__touch {
+        &-right-bottom {
+            gap: 20px;
+            &-image {
+                margin: 0;
+            }
+        }
+    }
+    .help__area-item {
+        gap: 16px;
+    }
+    .cta__two-info-item {
+        padding: 30px;
+    }    
+}
+@media (max-width: 575px) {
+    .cta__area {
+        &-bg {
+            padding: 50px 0;
+            .pr-0 {
+                padding-right: 12px;
+            }
+        }
+    }
+    .getIn__touch {
+        padding-bottom: 85px;
+    }
+    .getIn__touch-three-left-video-shape {
+        display: none;
+    }    
+}
+@media (max-width: 540px) {
+    .help__area {
+        display: block;
+        padding-top: 15px;
+        &-item {
+            margin-top: 30px;
+        }
+    }    
+    .cta__two-info {
+        display: block;
+        &-item {
+            display: block;
+            margin-bottom: 30px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    } 
+}
+@media (max-width: 490px) {
+    .getIn__touch-right-bottom-shape{
+        display: none;
+    }
+}
+@media (max-width: 390px) {
+    .getIn__touch-right-bottom {
+        display: block;
+        &-image {
+            margin-top: 30px;
+        }
+    }
+}

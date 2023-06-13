@@ -1,0 +1,162 @@
+/*==========================================================================
+Solution CSS
+==========================================================================*/
+.solution__area {
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-heading-color);
+        z-index: -1;
+        opacity: 0.6;
+    }  
+    &-title {
+        h1 {
+            color: var(--text-white);
+            max-width: 800px;
+            margin-bottom: 44px;
+        }
+    }  
+    &-right {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 463px;
+            height: 463px;
+            border-radius: 50%;
+            top: 30px;
+            right: -155px;
+            background: var(--primary-color-2);
+            mix-blend-mode: overlay;
+        } 
+        h6 {
+            color: var(--text-white);
+            margin-top: 30px;
+        }
+        &-video {
+            max-width: 155px;
+            text-align: center;
+            margin: 0 0 0 auto;            
+        }
+    }
+}
+/*==========================================================================
+Solution Two CSS
+==========================================================================*/
+.solutions__two {
+    background: var(--color-6);
+    &-title h2 {
+        margin-bottom: 30px;
+    }
+    &-item {
+        padding: 40px;
+        background: var(--bg-white);
+        border: 1px solid var(--border-color-1);
+        transition: 0.6s;
+        &-icon {
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+            background: var(--color-17);
+            border-radius: 50%;
+            margin-bottom: 20px;
+            img {
+                transform: rotateY(0);
+            }
+        }
+        h4 {
+            margin-bottom: 5px;
+        }
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--box-shadow-2);
+            .solutions__two-item-icon img {
+                animation: rotateY 0.7s;
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {    
+    .solutions__two-item {
+        padding: 40px 30px;
+    }
+}
+@media (max-width: 1199px) {    
+    .solution__area {
+        &-title {
+            text-align: center;
+            margin-bottom: 50px;
+            h1 {
+                margin: 0 auto;
+                margin-bottom: 44px;
+            }
+        }  
+        &-right {
+            position: relative;
+            &::before {
+                top: 20px;
+                right: 50%;
+                transform: translateX(50%);
+            } 
+            h6 {
+                margin-top: 30px;
+            }
+            &-video {
+                margin: 0 auto;            
+            }
+        }
+    }
+}
+@media (max-width: 991px) {    
+    .solution__area {
+        &-title {
+            h1 {
+                font-size: 60px;
+                line-height: 70px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {    
+    .solution__area {
+        &-title {
+            h1 {
+                font-size: 48px;
+                line-height: 58px;
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {    
+    .solution__area {
+        &-title {
+            h1 {
+                font-size: 42px;
+                line-height: 52px;
+            }
+        }
+    }
+}
+@media (max-width: 470px) {
+    .solution__area {
+        &-title {
+            h1 {
+                font-size: 31px;
+                line-height: 41px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+/*==========================================================================
+FAQ CSS
+==========================================================================*/
+.faq-accordion,
+.faq__collapse,
+.faq-collapse {
+    &-item {
+        border: 1px solid var(--border-color-1);
+        margin-bottom: 10px;
+        border-radius: 6px;
+        &:last-child {
+            margin: 0;
+        }
+        &-card {
+            &-header {  
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: none;
+                cursor: pointer;
+                padding: 16px 30px;
+                h6 {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                i {
+                    color: var(--primary-color);
+                }
+                span {
+                    color: var(--primary-color-1);
+                    margin-right: 15px;
+                }
+                &-content {
+                    padding: 0 30px 25px 64px;
+                    p {
+                        margin-top: -4px;
+                    }
+                }          
+            }
+        }
+    }            
+}
+/*==========================================================================
+FAQ Two CSS
+==========================================================================*/
+.faq__two {
+    &-left {
+        margin-right: 70px;
+        &-image {
+            position: relative;
+            padding-bottom: 90px;
+            &-one {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            &-question {
+                position: absolute;
+                top: 35px;
+                right: 70px;
+                background: var(--bg-heading-color);
+                padding: 30px;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                h6 {
+                    color: var(--text-white);
+                    max-width: 150px;
+                    text-transform: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .faq__two {
+        &-left {
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 520px) {
+    .faq-accordion,
+    .faq__collapse,
+    .faq-collapse {
+        &-item {
+            &-card {
+                &-header {
+                    padding: 15px;
+                    h6 {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                    span {
+                        margin-right: 8px;
+                    }
+                    &-content {
+                        padding: 0 15px 20px 15px;
+                    }          
+                }
+            }
+        }            
+    }
+    .faq__two {
+        &-left {
+            &-image {
+                img {
+                    max-width: 280px;
+                }
+                &-question {
+                    right: 20px;
+                }
+            }
+        }
+    }
+}

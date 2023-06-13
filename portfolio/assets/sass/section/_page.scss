@@ -1,0 +1,149 @@
+/*==========================================================================
+Page Banner CSS
+==========================================================================*/
+.page__banner {
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 110px;
+    padding-bottom: 160px;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../../assets/img/shape/page-banner-bg.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -2;
+    }
+    &-content {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                list-style: none;
+                color: var(--primary-color-1);
+                font-weight: 700;
+                a {
+                    color: var(--text-white);
+                    margin-right: 15px;
+                    transition: 0.4s;
+                    &:hover {
+                        color: var(--primary-color-1);
+                    }
+                }
+                span {
+                    margin-right: 15px;
+                    color: var(--text-white);
+                }
+            }
+        }
+        h1 {
+            color: var(--text-white);
+            font-size: 70px;
+            line-height: 80px;
+            margin-top: 10px;
+        }
+        > span {
+            color: var(--text-white);
+            display: block;
+            font-weight: 700;
+            font-size: 120px;
+            line-height: 144px;
+            opacity: 0.08;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+            margin: 0 0 -80px 0;
+            position: relative;
+            z-index: -1;            
+            text-transform: uppercase;
+            font-family: var(--heading-font);
+        }
+    }
+}
+/*==========================================================================
+Error CSS
+==========================================================================*/
+.error {
+    &-page {
+        text-align: center;
+        h2 {
+            margin: 40px 0 30px 0;
+        }
+        p {
+            margin-bottom: 35px;
+        }
+    }
+}
+@media (max-width: 1599px) {
+    .page__banner {
+        &::after {
+            left: -140px;
+        }
+    }   
+}
+@media (max-width: 991px) {
+    .page__banner {
+        &::after {
+            left: -220px;
+            width: 125%;
+        }
+    }   
+}
+@media (max-width: 767px) {
+    .page__banner {
+        &::after {
+            background-image: none;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-heading-color);
+        }
+        &-content {
+            h1 {
+                font-size: 60px;
+                line-height: 70px;
+            }
+            > span {
+                font-size: 90px;
+                line-height: 102px;
+                margin: 0 0 -60px 0;
+            }
+        }
+    }   
+}
+@media (max-width: 480px) {
+    .page__banner {
+        padding: 155px 0;
+        &-content {
+            h1 {
+                font-size: 45px;
+                line-height: 55px;
+            }
+            > span {
+                font-size: 68px;
+                line-height: 80px;
+            }
+        }
+    }   
+}
+@media (max-width: 359px) {
+    .page__banner {
+        &-content {
+            h1 {
+                font-size: 38px;
+                line-height: 48px;
+            }
+            > span {
+                font-size: 58px;
+                line-height: 60px;
+            }
+        }
+    }   
+}

@@ -1,0 +1,64 @@
+/*==========================================================================
+Choose Us CSS
+==========================================================================*/
+.chooseUs__area {
+    &-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        &-counter {
+            h6 {
+                font-weight: 600;
+                max-width: 240px;
+                margin-top: 18px;
+            }
+        }
+    }
+    &-item {
+        border: 1px solid var(--border-color-3);
+        border-radius: 6px;
+        padding: 41px 40px;
+        &-icon {
+            margin-bottom: 27px;
+        }
+        h4 {
+            margin-bottom: 11px;
+        }
+        &:hover {
+            .chooseUs__area-item-icon img {
+                animation: rotateY 0.6s;
+            }            
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .chooseUs__area {
+        &-item {
+            padding: 34px 30px;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .chooseUs__area {
+        .img-full {
+            width: 100%;
+        }           
+    }
+}
+@media (max-width: 991px) {
+    .chooseUs__area {
+        &-right {
+            justify-content: start;
+        }            
+    }
+}
+@media (max-width: 575px) {
+    .chooseUs__area-right {
+        gap: 0;
+        &-shape {
+            max-width: 90px;
+            padding-right: 15px;
+        }        
+    }
+}

@@ -1,0 +1,242 @@
+/*==========================================================================
+Top Bar CSS
+==========================================================================*/
+.top__bar {
+    background: var(--bg-heading-color);
+    padding: 7px 30px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        background: var(--primary-color-1);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 30%;
+        clip-path: polygon(0 0, 100% 0%, 97% 100%, 0 100%);
+        z-index: -1;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background: var(--text-white);
+        top: -5px;
+        left: 30%;
+        bottom: -4px;
+        width: 3px;
+        z-index: -1;
+        transform: rotate(23deg);
+    }
+    &-left {
+        a {
+            color: var(--text-white);
+            font-weight: 600;
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        > a {
+            color: var(--text-white);
+            font-weight: 600;
+            transition: 0.4s;
+            text-transform: lowercase;
+            &:hover {
+                color: var(--primary-color-1);
+            }
+            i {
+                color: var(--primary-color-1);
+                margin-right: 10px;
+            }
+        }
+        &-social {
+            border-left: 1px solid var(--color-2);
+            padding-left: 30px;
+            margin-left: 30px;            
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin-right: 15px;
+                    &:last-child {
+                        margin: 0;
+                    }
+                    a {
+                        i {
+                            color: var(--text-white);
+                            transition: .4s;
+                            &:hover {
+                                color: var(--primary-color-1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+Top Bar Three CSS
+==========================================================================*/
+.topbar__three {
+    padding: 12px 0;
+    &-left {
+        a {
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.4s;
+            line-height: 24px;
+            &:hover {
+                color: var(--primary-color-3);
+            }
+            i {
+                margin-right: 10px;
+                color: var(--primary-color-3);
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+    &-right {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                list-style: none;
+                display: inline-block;
+                margin-right: 25px;
+                padding-right: 25px;
+                border-right: 1px solid var(--color-13);
+                &:last-child {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                }
+                a {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 26px;
+                    transition: 0.4s;
+                    text-transform: lowercase;
+                    &:hover {
+                        color: var(--primary-color-3);
+                    }
+                    i {
+                        color: var(--primary-color-3);
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 1600px) {
+    .top__bar {
+        &::after {
+            transform: rotate(20deg);
+        }
+    }
+}
+@media (max-width: 1480px) {
+    .top__bar {
+        &::before {
+            width: 33%;
+        }
+        &::after {
+            transform: rotate(20deg);
+            left: 33%;
+        }
+    }
+}
+@media (max-width: 1320px) {
+    .top__bar {
+        &::before {
+            width: 36%;
+        }
+        &::after {
+            left: 36%;
+        }
+    }
+}
+@media (max-width: 1190px) {
+    .top__bar {
+        &::before {
+            width: 40%;
+        }
+        &::after {
+            left: 40%;
+            transform: rotate(18deg);
+        }
+    }
+}
+@media (max-width: 991px) {
+    .top__bar {
+        padding: 7px 13px;
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+        &-left {
+            a {
+                transition: 0.4s;
+                i {
+                    color: var(--primary-color-1);
+                }
+                &:hover {
+                    color: var(--primary-color-1);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .top__bar {
+        &-left {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        &-right {
+            justify-content: center;
+            &-social {
+                padding-left: 11px;
+                margin-left: 12px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .top__bar {
+        padding: 5px 0;
+    }
+    .topbar__three-right ul li {
+        margin-right: 0;
+        padding-right: 5px;
+        border: 0;
+    }    
+}
+@media (max-width: 359px) {
+    .top__bar {
+        &-left {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        &-right {
+            justify-content: center;
+            &-social {
+                border: 0;
+                padding-left: 5px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
