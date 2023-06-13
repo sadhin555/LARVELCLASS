@@ -1,0 +1,41 @@
+{
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+    "editor.defaultColorDecorators": false,
+    "github-enterprise.uri": "",
+    "json.format.keepLines": true,
+    "html.customData": [
+        "html.customData",
+        "contributes.html.customData",
+        "{   \"version\": 1.1,   \"tags\": [],   \"globalAttributes\": [],   \"valueSets\": [] }"
+    ],
+    "phpTools.language": "en",
+    "php-docblocker.author": {
+
+
+        "name": "sadhin555",
+        "email": "sadhin.halder64@gmail.com"
+    },
+    "php-docblocker.qualifyClassNames": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true,
+    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.experimental.aiQuickFix": true,
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "typescript.referencesCodeLens.showOnAllFunctions": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "php.version": "8.1",
+    "php-docblocker.classTemplate": null,
+    "workbench.preferredDarkColorTheme": "Laravel",
+    "workbench.preferredHighContrastColorTheme": "Laravel",
+    "workbench.editor.autoLockGroups": {
+        "gitlens.rebase": true
+    },
+    "workbench.editor.defaultBinaryEditor": "gitlens.rebase",
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "workbench.colorTheme": "Laravel",
+}
